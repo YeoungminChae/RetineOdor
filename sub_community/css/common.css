@@ -1,0 +1,105 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/* 목록 불릿 없애기 */
+ol,
+ul {
+	list-style: none;
+}
+
+/* 하이퍼링크 설정 */
+a:link {
+	text-decoration: none;
+	color: inherit;
+}
+
+a:visited {
+	text-decoration: none;
+	color: inherit;
+}
+
+a:hover {
+	text-decoration: none;
+	color: inherit;
+}
+
+a:active {
+	text-decoration: none;
+	color: inherit;
+}
+
+body {
+	font-family: 'Hahmlet', serif;
+	;
+	font-size: 16px;
+	line-height: 26px;
+	color: inherit;
+}
+
+#board {
+	width: 1050px;
+	margin: 0 50px 50px 50px;
+	margin-left: 135px;
+}
+
+#board>li {
+	width: 100%;
+}
+
+#board>li:hover a {
+	background: #EEE;
+	font-weight: bold;
+}
+
+#board>li>a {
+	display: block;
+	border-bottom: 1px solid #16100d;
+	/* border-left: 1px solid #16100d; */
+	/* border-right: 1px solid #16100d; */
+	padding-top: 20px;
+	padding-bottom: 19px;
+	padding-left: 30px;
+	text-align: left;
+}
+
+#board>li>a>.text_span {
+	letter-spacing: 5px;
+}
+
+#board>li>a>.number_span {
+	font-size: 15px;
+	padding-right: 50px;
+}
+
+#board>li:first-child>a {
+	/* border-top: 1px solid #16100d; */
+}
+
+#board>li:last-child>a {
+	border-top: 0;
+}
+
+#board>li>div {
+	width: 100%;
+	border-top: 1px solid #16100d;
+	border-bottom: 1px solid #16100d;
+	border-top: 0;
+	padding: 10px 10px 10px 165px;
+	box-sizing: border-box;
+	/* height: 130px; */
+	display: none;
+}
+
+/* #board>li:nth-child(2)>div {
+	height: 130px;
+}
+
+#board>li:nth-child(3)>div {
+	height: 100px;
+}
+
+#board>li:nth-child(4)>div {
+	height: 180px; */
+}
