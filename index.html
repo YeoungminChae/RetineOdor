@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1450">
+    <title>RetineOdor</title>
+
+    <!--1. 연결 시켜야 할 파일을 연결 시킨다.(swiper slide의 경우에는 css파일과 js파일이다)
+    상품 슬라이더 js/css 파일-->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!--aos-->
+    <!-- 모션 -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./index/favicon.ico" type="image/x-icon">
+
+    <!-- fonts(hahmlet_belleza) -->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hahmlet:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Belleza&family=Hahmlet:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet"> <!-- fonts-->
+
+    <!-- index_style.css -->
+    <link rel="stylesheet" href="./css/index_style.css">
+
+</head>
+
+<body>
+    <!-- top -->
+    <div id="top">
+        <div class="top_box">
+            <div class="top_icon">
+                <img src="./index/icon/login.png" alt="login">
+                <a href="#" class="position_icon"><img src="./index/icon/login_2.png" alt="login_2"></a>
+            </div>
+            <div class="top_icon">
+                <img src="./index/icon/wish.png" alt="wish">
+                <a href="#" class="position_icon"><img src="./index/icon/wish_2.png" alt="wish_2"></a>
+            </div>
+            <div class="top_icon top_icon3">
+                <img src="./index/icon/bag.png" alt="bag">
+                <a href="#" class="position_icon"><img src="./index/icon/bag_2.png" alt="bag_2"></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- header -->
+    <div id="header">
+        <div class="header_box">
+            <ul class="mg_left">
+                <li>
+                    <a href="./sub_brand.html">BRAND<div class="solid"></div></a>
+                </li>
+                <li>
+                    <a href="./sub_shop_all.html">SHOP<div class="solid"></div></a>
+                </li>
+            </ul>
+            <h1 class="header_logo"><a href="./index.html"><img src="./index/images/header_logo.png"
+                        alt="headerlogo"></a></h1>
+            <ul class="mg_right">
+                <li>
+                    <a href="./sub_community.html">COMMUNICATION<div class="solid"></div></a>
+                </li>
+                <li class="hover_li">
+                    <a href="./sub_event.html">EVENT<div class="solid"></div></a>
+                    <ul class="hover_ul">
+                        <li class="hover_li2"><a href="./sub_event.html">EVENT</a></li>
+                        <li class="hover_li2"><a href="./sub_event_perfumestory.html">PERFUME STORY</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- main_container -->
+    <div id="main_container">
+
+        <!--3. 구조와 class의 이름을 알맞게 넣어준다.-->
+        <div id="main_banner" class="swiper mb">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><a href="./sub_shop_detail.html"><img src="./index/products/main_sichel.png"
+                            alt="main_sichel"></a></div>
+                <div class="swiper-slide"><a href="#none"><img src="./index/products/main_solvir.png"
+                            alt="main_sichel"></a></div>
+                <div class="swiper-slide">
+                    <a href="#none"><img src="./index/products/main_neuter.png" alt="main_sichel"></a>
+                </div>
+            </div>
+            <!--화살표추가-->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <!--도트를 추가하고 싶을때-->
+            <div class="swiper-pagination"></div>
+        </div><!--mb E-->
+        <!-- <a href="#none"><img src="./index/products/main_sichel.png" alt="main_sichel"></a>
+        <a href="#none"><img src="./index/products/main_solvir.png" alt="main_sichel"></a>
+        <a href="#none"><img src="./index/products/main_neuter.png" alt="main_sichel"></a> -->
+
+    </div>
+
+    <!-- blank -->
+    <div id="blank">
+        <!-- <img src="./index/images/blank.png" alt="blank"> -->
+
+    </div>
+
+    <!-- event_container -->
+    <div id="event_container">
+        <div class="event_container_box">
+            <h1 class="event_container_h1">당신의 향수 이야기 시작합니다.</h1>
+            <div class="send_box">
+                <img src="./index/images/send.png" alt="send">
+                <a href="./sub_event_perfumestory.html" class="send_1"><img src="./index/images/send_1.png"
+                        alt="send_1"></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- p_story_container -->
+    <div id="p_story_container">
+        <div class="ps_effect">
+            <h1>Perfume Story Of Each Person</h1>
+            <h1>Perfume Story Of Each Person</h1>
+            <h1>Perfume Story Of Each Person</h1>
+            <h1>Perfume Story Of Each Person</h1>
+            <h1>Perfume Story Of Each Person</h1>
+            <h1>Perfume Story Of Each Person</h1>
+            <h1>Perfume Story Of Each Person</h1>
+        </div>
+
+        <div class="ps_container">
+            <h1>Best Perfume Story</h1>
+
+            <h3>당신의 이야기를 들려주세요</h3>
+            <p>nth quarter <br>
+                <span>분기별 이야기가 변경됩니다</span>
+            </p>
+            <ul class="str_1_ul" data-aos="fade-down-right" data-aos-duration="3500" data-aos-delay="300">
+                <li class="str_11"><img src="./index/images/story_11.png" alt="story_11">
+                </li>
+                <li class="str_1">
+                    <a href="./sub_event_perfumestory.html"><img src="./index/images/story_1.png" alt="story_1"></a>
+                </li>
+            </ul>
+            <ul class="str_2_ul" data-aos="fade-down-left" data-aos-duration="3500" data-aos-delay="350">
+                <li class="str_22"><img src="./index/images/story_22.png" alt="story_22"></li>
+                <li class="str_2">
+                    <a href="./sub_event_perfumestory.html"><img src="./index/images/story_2.png" alt="story_2"></a>
+                </li>
+            </ul>
+            <ul class="str_3_ul" data-aos="fade-up-right" data-aos-duration="3500" data-aos-delay="250">
+                <li class="str_33"><img src="./index/images/story_33.png" alt="story_33"></li>
+                <li class="str_3">
+                    <a href="./sub_event_perfumestory.html"><img src="./index/images/story_3.png" alt="story_3"></a>
+                </li>
+            </ul>
+            <ul class="str_4_ul" data-aos="fade-up-left" data-aos-duration="3500" data-aos-delay="250">
+                <li class="str_44"><img src="./index/images/story_44.png" alt="story_44"></li>
+                <li class="str_4">
+                    <a href="./sub_event_perfumestory.html"><img src="./index/images/story_4.png" alt="story_4"></a>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+
+    <!-- best_container -->
+    <div id="best_container">
+        <div class="b_container_box">
+            <div class="b_box_1">
+                <h2>Best Perfume</h2>
+                <div class="sichel_box"><img src="./index/products/sichell_m.png" alt="sichel"></div>
+
+                <img src="./index/images/sichel_text_box.png" alt="sichel" class="sichel_text">
+                <div class="best_text_box_1">
+                    <h4>EAU DE PARFUME</h4>
+                    <h3>109,000K.R.W</h3>
+                    <p>편안하면서도 매혹적이게 느껴지는 장미<br>
+                        적당한 무게감을 더해주는 우드<br>
+                        깨끗한 관능미의 블랙 카다멈</p>
+                    <div class="button_box">
+                        <div class="buy_box">
+                            <img src="./index/images/buy.png" alt="buy">
+                            <a href="./sub_shop_detail.html" class="buy_1"><img src="./index/images/buy_1.png"
+                                    alt="buy_1"></a>
+                        </div>
+                        <div class="more_box">
+                            <img src="./index/images/more.png" alt="more">
+                            <a href="./sub_shop_detail.html" class="more_1"><img src="./index/images/more_1.png"
+                                    alt="more_1"></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="b_box_2">
+                <h2>Best Body</h2>
+                <div class="solvir_box"><img src="./index/products/solvir_m.png" alt="sichel"></div>
+                <img src="./index/images/solvir_text_box.png" alt="sichel" class="solvir_text">
+                <div class="best_text_box_2">
+                    <h4>BODY WASH</h4>
+                    <h3>59,000K.R.W</h3>
+                    <p>생동감이 느껴지는 갈바넘과 스파이시<br>
+                        코끝을 자극하는 씁쓸함의 안젤리카, 시더, 인센스<br>
+                        살내음의 오크모스와 화이트머스크</p>
+
+                    <div class="button_box">
+                        <div class="buy_box">
+                            <img src="./index/images/buy.png" alt="buy">
+                            <a href="#none" class="buy_1"><img src="./index/images/buy_1.png" alt="buy_1"></a>
+                        </div>
+                        <div class="more_box">
+                            <img src="./index/images/more.png" alt="more">
+                            <a href="#none" class="more_1"><img src="./index/images/more_1.png" alt="more_1"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="b_box_3">
+                <h2>Best Home</h2>
+                <div class="neuter_box"><img src="./index/products/neuter_m.png" alt="sichel"></div>
+                <img src="./index/images/neuter_text_box.png" alt="sichel" class="neuter_text">
+                <div class="best_text_box_3">
+                    <h4>DIFFUSER</h4>
+                    <h3>69,000K.R.W</h3>
+                    <p>달콤한 매력의 블랙커런트와 만다린오렌지<br>
+                        깨끗하며 맑은 연꽃<br>
+                        부드러운 향긋함의 바닐라 </p>
+                    <div class="button_box">
+                        <div class="buy_box">
+                            <img src="./index/images/buy.png" alt="buy">
+                            <a href="#none" class="buy_1"><img src="./index/images/buy_1.png" alt="buy_1"></a>
+                        </div>
+                        <div class="more_box">
+                            <img src="./index/images/more.png" alt="more">
+                            <a href="#none" class="more_1"><img src="./index/images/more_1.png" alt="more_1"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- main_event_container -->
+    <div id="main_event_container">
+        <div class="me_container_box">
+            <h1>Ongoing Event</h1>
+            <div class="main_event_1" data-aos="fade-up" data-aos-easing="ease-out-back" data-aos-duration="3500"
+                data-aos-delay="150">
+                <a href="./sub_event.html"><img src="./index/images/main_event_1.png" alt="main_event_1"></a>
+            </div>
+            <div class="main_event_2" data-aos="fade-down" data-aos-easing="ease-out-back" data-aos-duration="3500"
+                data-aos-delay="250">
+                <a href="./sub_event.html/"><img src="./index/images/main_event_2.png" alt="main_event_2"></a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- main_brand_video_container -->
+    <div id="main_brand_video_container">
+        <div class="mbv_container_box">
+
+            <iframe width="960" height="540" src="https://www.youtube.com/embed/KPoipkt1CNQ?start=0"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div id="footer">
+        <div class="footer_box">
+            <div class="footer_text_box1">
+                <ul>
+                    <li><a href="#">회사소개</a></li>
+                    <li><a href="#">채용안내</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">고객센터</a></li>
+                </ul>
+                <p>대표이사 : 채영민</p>
+                <p>부산광역시 중구 중앙대로 26 다원중앙타워 10층</p>
+                <p>사업자 등록번호 : 602-90-54171</p>
+                <p>Copyright ⓒ NARAE Design Institute All Rights Reserved</p>
+            </div>
+            <div class="footer_logo"><a href="./index.html"><img src="./index/images/footer_logo.png" alt="footerlogo">
+                </a></div>
+            <div class="footer_text_box2">
+                <ul>
+                    <li>
+                        <a href="https://www.instagram.com/accounts/login/?next=%2F_blank%2F&source=desktop_nav"
+                            target="_blank"><img src="./index/icon/insta.png" alt="insta">@RetineOdor</a>
+                    </li>
+                </ul>
+                <p>Mon-Fri : 9am - 6pm Sat Sun Holiday Off</p>
+                <p>TEL : 051-245-1650</p>
+                <p>FAX : 051-247-6173</p>
+                <p>E-Mail : nrdesign@naver.com</p>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        AOS.init();
+    </script>
+
+    <!--2. 필수 옵션을 넣는 script부분을 body가장 끝에 넣어준다.
+슬라이더 script-->
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mb", {
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+            loop: true,/*4번째 이미지에서 다음 키를 누르면 바로 첫번째 이미지가 나오게 한다*/
+        });
+
+        /*".card" 부분의 class이름은, swiper클래스가 지정된 박스에 각각의 이름을 붙여 옵션을 각기 다르게 지정한다.(먼저 swiper옆에 클래스를 지정한뒤 해당 클래스를 넣어주세요)*/
+    </script>
+
+
+</body>
+
+</html>

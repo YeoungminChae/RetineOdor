@@ -1,0 +1,1199 @@
+/* fonts(hahmlet) 
+font-family: 'Belleza', sans-serif;
+font-family: 'Hahmlet', serif;
+*/
+
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+img,
+video,
+iframe {
+    vertical-align: middle;
+}
+
+body {
+    font-family: 'Hahmlet', serif;
+    font-size: 18px;
+    line-height: 26px;
+    color: #e9e0d7;
+}
+
+/* top */
+#top {
+
+    background-color: #16100d;
+    height: 60px;
+    box-sizing: border-box;
+}
+
+
+.top_box {
+    margin: 0 auto;
+    width: 1320px;
+    padding-top: 15px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.top_icon {
+    width: 32px;
+    height: 32px;
+    box-sizing: border-box;
+    margin-right: 42px;
+    position: relative;
+}
+
+.top_icon>img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.top_icon3 {
+    margin-right: 37px;
+}
+
+.position_icon {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.top_icon:hover .position_icon {
+    opacity: 1;
+}
+
+
+/* header */
+#header {
+    font-family: 'Belleza', sans-serif;
+    background-color: #16100d;
+    height: 60px;
+    position: relative;
+}
+
+.header_box {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.header_box>ul {
+    display: flex;
+}
+
+.header_box>ul>li {
+    padding: 17px 65px;
+}
+
+.header_box .mg_left {
+    margin-left: 120px;
+}
+
+.header_box .mg_right {
+    margin-right: 40px;
+}
+
+.header_box .mg_left>li>a {
+    line-height: 18px;
+    position: relative;
+}
+
+.header_box .mg_right>li>a {
+    line-height: 18px;
+    position: relative;
+}
+
+.header_box>.header_logo {
+    position: absolute;
+    left: 50%;
+    top: -35px;
+    transform: translate(-50%, 0);
+}
+
+#header>.header_box>.mg_right>.hover_li>.hover_ul {
+    /* display: none; */
+    opacity: 0;
+    transform: scaleY(0);
+    transform-origin: top;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 100%;
+
+}
+
+#header>.header_box>.mg_right>.hover_li {
+    position: relative;
+}
+
+#header>.header_box>.mg_right>.hover_li:hover>.hover_ul {
+    opacity: 1;
+    transform: scaleY(1);
+    /* display: block; */
+    text-align: center;
+    transition-duration: 0.5s;
+}
+
+#header>.header_box>.mg_right>.hover_li:hover>.hover_ul>.hover_li2>a {
+    padding: 5px 10px;
+    border: 1px solid #16100d;
+    background-color: #16100d;
+    display: block;
+}
+
+/* 블락을 넣어줘야 너비가 같아짐! */
+
+#header>.header_box>.mg_right>.hover_li:hover>.hover_ul>.hover_li2>a:hover {
+    color: #d3914f;
+    background-color: #e9e0d7;
+}
+
+#header>.header_box>.mg_right>.hover_li:hover>.hover_ul>.hover_li2>a:hover .hover_li2 {
+    background-color: #e9e0d7;
+}
+
+/* 메뉴호버효과 */
+.solid {
+    width: 100%;
+    margin: auto;
+    margin-top: 16.5px;
+    height: 5px;
+    background: #e9e0d7;
+    visibility: hidden;
+    opacity: 0;
+    transform: scaleX(0);
+    transition-property: opacity, transform;
+    transition-duration: 0.5s;
+    position: absolute;
+    left: 0;
+    bottom: -20px;
+}
+
+#header>.header_box>.mg_left>li:hover>a .solid {
+    transform: scaleX(1);
+    opacity: 1;
+    visibility: visible;
+}
+
+#header>.header_box>.mg_right>li:hover>a .solid {
+    transform: scaleX(1);
+    opacity: 1;
+    visibility: visible;
+}
+
+/* menu */
+#menu {
+    font-family: 'Belleza', sans-serif;
+    background-color: #e9e0d7;
+    height: 274px;
+    color: #16100d;
+}
+
+.menu_box {
+    width: 1320px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.menu_box>h1 {
+    font-size: 35px;
+    text-align: center;
+    padding-top: 115px;
+    padding-bottom: 30px;
+}
+
+.menu_box>ul {
+    display: flex;
+}
+
+.menu_box>ul>li {
+    padding-right: 59px;
+}
+
+.menu_box>ul>li:nth-child(4) {
+    padding-right: 0;
+}
+
+.menu_box>ul>li:first-child {
+    padding-left: 58px;
+}
+
+/* perfume_bn */
+#perfume_bn {
+    background: url(../sub_shop_all/images/perfume_bn.png)no-repeat center center;
+    height: 204px;
+}
+
+/* perfume_product_container */
+#perfume_product_container {
+    font-family: 'Belleza', sans-serif;
+    background-color: #e9e0d7;
+}
+
+.pp_container_box {
+    width: 1320px;
+    height: 880px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 150px 0 0 0;
+    box-sizing: border-box;
+}
+
+.solvir_pbox,
+.sichel_pbox,
+.neuter_pbox {
+    width: 33%;
+}
+
+/* solvir */
+.solvir_img_box {
+    width: 420px;
+    height: 421px;
+    position: relative;
+    perspective: 1000px;
+}
+
+.solvir_img_box>.solvir_1 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: all 1s;
+}
+
+.solvir_img_box>.solvir_11 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    transition: all 1s;
+}
+
+/* hover효과 */
+.solvir_img_box:hover>.solvir_1 {
+    opacity: 0;
+    transform: rotateY(180deg);
+}
+
+.solvir_img_box:hover>.solvir_11 {
+    transform: rotateY(180deg);
+    opacity: 1;
+}
+
+.left_text_box {
+    width: 208px;
+    height: 159px;
+    color: #16100d;
+    text-align: right;
+    padding-top: 18px;
+    margin-left: 32px;
+    padding-right: 20px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+
+.button_box {
+    width: 210px;
+    height: 30px;
+    margin-top: 15px;
+    display: flex;
+    box-sizing: border-box;
+    overflow: hidden;
+    justify-content: space-between
+}
+
+.buy {
+    width: 105px;
+    height: 30px;
+    position: relative;
+}
+
+.bag {
+    width: 105px;
+    height: 30px;
+    position: relative;
+}
+
+.buy_1 {
+    position: absolute;
+    left: 5px;
+    top: 0px;
+    opacity: 0;
+    /* transition: all 0.5s; */
+}
+
+.bag_1 {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.buy:hover .buy_1 {
+    opacity: 1;
+    /* position: absolute;
+    left: 5px;
+    top: 0; */
+}
+
+.bag:hover .bag_1 {
+    opacity: 1;
+}
+
+
+/* sichel */
+.sichel_img_box {
+    width: 420px;
+    height: 421px;
+    position: relative;
+    perspective: 1000px;
+}
+
+.sichel_img_box>.sichel_1 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: all 1s;
+}
+
+.sichel_img_box>.sichel_11 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    transition: all 1s;
+}
+
+/* hover효과 */
+.sichel_img_box:hover>.sichel_1 {
+    opacity: 0;
+    transform: rotateY(180deg);
+}
+
+.sichel_img_box:hover>.sichel_11 {
+    transform: rotateY(180deg);
+    opacity: 1;
+}
+
+.left_text_box {
+    width: 208px;
+    height: 159px;
+    color: #16100d;
+    text-align: right;
+    padding-top: 18px;
+    margin-left: 30px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+
+/* .button_box {
+    width: 210px;
+    height: 30px;
+    margin-top: 15px;
+    display: flex;
+    box-sizing: border-box;
+    overflow: hidden;
+    justify-content: space-between
+}
+
+.buy {
+    width: 105px;
+    height: 30px;
+    position: relative;
+}
+
+.bag {
+    width: 105px;
+    height: 30px;
+    position: relative;
+}
+
+.buy_1 {
+    position: absolute;
+    left: 4px;
+    top: -1px;
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.bag_1 {
+    position: absolute;
+    right: -1px;
+    top: -1px;
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.buy:hover .buy_1 {
+    opacity: 1;
+}
+
+.bag:hover .bag_1 {
+    opacity: 1;
+} */
+
+/* neuter */
+.neuter_img_box {
+    width: 420px;
+    height: 421px;
+    position: relative;
+    perspective: 1000px;
+}
+
+.neuter_img_box>.neuter_1 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: all 1s;
+}
+
+.neuter_img_box>.neuter_11 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    transition: all 1s;
+}
+
+/* hover효과 */
+.neuter_img_box:hover>.neuter_1 {
+    opacity: 0;
+    transform: rotateY(180deg);
+}
+
+.neuter_img_box:hover>.neuter_11 {
+    transform: rotateY(180deg);
+    opacity: 1;
+}
+
+.left_text_box {
+    width: 208px;
+    height: 159px;
+    color: #16100d;
+    text-align: right;
+    padding-top: 18px;
+    margin-left: 30px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+
+/* .button_box {
+    width: 210px;
+    height: 30px;
+    margin-top: 15px;
+    display: flex;
+    box-sizing: border-box;
+    overflow: hidden;
+    justify-content: space-between
+}
+
+.buy {
+    width: 105px;
+    height: 30px;
+    position: relative;
+}
+
+.bag {
+    width: 105px;
+    height: 30px;
+    position: relative;
+}
+
+.buy_1 {
+    position: absolute;
+    left: 4px;
+    top: -1px;
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.bag_1 {
+    position: absolute;
+    right: -1px;
+    top: -1px;
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.buy:hover .buy_1 {
+    opacity: 1;
+}
+
+.bag:hover .bag_1 {
+    opacity: 1;
+} */
+
+
+
+/* home_bn */
+#home_bn {
+    background: url(../sub_shop_all/images/home_bn.png)no-repeat center center;
+    height: 204px;
+}
+
+/* home_product_container */
+#home_product_container {
+    font-family: 'Belleza', sans-serif;
+    background-color: #e9e0d7;
+}
+
+.hp_container_box {
+    width: 1320px;
+    height: 880px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 150px 0 0 0;
+    box-sizing: border-box;
+}
+
+.solvir_hbox,
+.sichel_hbox,
+.neuter_hbox {
+    width: 33%;
+}
+
+/* solvir */
+.solvir_img_hbox {
+    width: 420px;
+    height: 421px;
+    position: relative;
+    perspective: 1000px;
+}
+
+.solvir_img_hbox>.solvir_2 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: all 1s;
+}
+
+.solvir_img_hbox>.solvir_22 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    transition: all 1s;
+}
+
+/* hover효과 */
+.solvir_img_hbox:hover>.solvir_2 {
+    opacity: 0;
+    transform: rotateY(180deg);
+}
+
+.solvir_img_hbox:hover>.solvir_22 {
+    transform: rotateY(180deg);
+    opacity: 1;
+}
+
+.right_text_hbox {
+    width: 210px;
+    height: 169px;
+    color: #16100d;
+    text-align: right;
+    padding-top: 18px;
+    padding-right: 20px;
+    margin-left: 190px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.button_box1 {
+    width: 210px;
+    height: 30px;
+    margin-top: 15px;
+    display: flex;
+    box-sizing: border-box;
+    overflow: hidden;
+    justify-content: space-between
+}
+
+
+
+/* sichel */
+.sichel_img_hbox {
+    width: 420px;
+    height: 421px;
+    position: relative;
+    perspective: 1000px;
+}
+
+.sichel_img_hbox>.sichel_2 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: all 1s;
+}
+
+.sichel_img_hbox>.sichel_22 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    transition: all 1s;
+}
+
+/* hover효과 */
+.sichel_img_hbox:hover>.sichel_2 {
+    opacity: 0;
+    transform: rotateY(180deg);
+}
+
+.sichel_img_hbox:hover>.sichel_22 {
+    transform: rotateY(180deg);
+    opacity: 1;
+}
+
+.sichel_text_hbox {
+    color: #16100d;
+    text-align: right;
+    padding-top: 18px;
+}
+
+.sichel_text_hbox>p {
+    padding-right: 50px;
+}
+
+.sichel_text_hbox>ul {
+    display: flex;
+    padding-left: 200px;
+    padding-top: 14px;
+}
+
+.sichel_text_hbox>ul>li {
+    padding-right: 8px;
+}
+
+/* neuter */
+.neuter_img_hbox {
+    width: 420px;
+    height: 421px;
+    position: relative;
+    perspective: 1000px;
+}
+
+.neuter_img_hbox>.neuter_2 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: all 1s;
+}
+
+.neuter_img_hbox>.neuter_22 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    transition: all 1s;
+}
+
+/* hover효과 */
+.neuter_img_hbox:hover>.neuter_2 {
+    opacity: 0;
+    transform: rotateY(180deg);
+}
+
+.neuter_img_hbox:hover>.neuter_22 {
+    transform: rotateY(180deg);
+    opacity: 1;
+}
+
+.neuter_text_hbox {
+    color: #16100d;
+    text-align: right;
+    padding-top: 18px;
+}
+
+.neuter_text_hbox>p {
+    padding-right: 50px;
+}
+
+.neuter_text_hbox>ul {
+    display: flex;
+    padding-left: 200px;
+    padding-top: 14px;
+}
+
+.neuter_text_hbox>ul>li {
+    padding-right: 8px;
+}
+
+
+
+
+/* body_bn */
+#body_bn {
+    background: url(../sub_shop_all/images/body_bn.png)no-repeat center center;
+    height: 204px;
+}
+
+/* body_product_container - hand cream */
+#body_product_container {
+    font-family: 'Belleza', sans-serif;
+    background-color: #e9e0d7;
+}
+
+.bp_container_box {
+    width: 1320px;
+    height: 880px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 150px 0 0 0;
+    box-sizing: border-box;
+}
+
+.solvir_bbox,
+.sichel_bbox,
+.neuter_bbox {
+    width: 33%;
+}
+
+/* solvir */
+.solvir_img_bbox {
+    width: 420px;
+    height: 421px;
+    position: relative;
+    perspective: 1000px;
+}
+
+.solvir_img_bbox>.solvir_3 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: all 1s;
+}
+
+.solvir_img_bbox>.solvir_33 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    transition: all 1s;
+}
+
+/* hover효과 */
+.solvir_img_bbox:hover>.solvir_3 {
+    opacity: 0;
+    transform: rotateY(180deg);
+}
+
+.solvir_img_bbox:hover>.solvir_33 {
+    transform: rotateY(180deg);
+    opacity: 1;
+}
+
+
+
+
+/* sichel */
+.sichel_img_bbox {
+    width: 420px;
+    height: 421px;
+    position: relative;
+    perspective: 1000px;
+}
+
+.sichel_img_bbox>.sichel_3 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: all 1s;
+}
+
+.sichel_img_bbox>.sichel_33 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    transition: all 1s;
+}
+
+/* hover효과 */
+.sichel_img_bbox:hover>.sichel_3 {
+    opacity: 0;
+    transform: rotateY(180deg);
+}
+
+.sichel_img_bbox:hover>.sichel_33 {
+    transform: rotateY(180deg);
+    opacity: 1;
+}
+
+
+
+/* neuter */
+.neuter_img_bbox {
+    width: 420px;
+    height: 421px;
+    position: relative;
+    perspective: 1000px;
+}
+
+.neuter_img_bbox>.neuter_3 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: all 1s;
+}
+
+.neuter_img_bbox>.neuter_33 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    transition: all 1s;
+}
+
+/* hover효과 */
+.neuter_img_bbox:hover>.neuter_3 {
+    opacity: 0;
+    transform: rotateY(180deg);
+}
+
+.neuter_img_bbox:hover>.neuter_33 {
+    transform: rotateY(180deg);
+    opacity: 1;
+}
+
+
+
+/* handcream */
+
+/* body_product_container - body wash */
+/* solvir */
+/* .solvir_img_bbox {
+    width: 420px;
+    height: 421px;
+    position: relative;
+    perspective: 1000px;
+} */
+
+.solvir_img_bbox>.solvir_4 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: all 1s;
+}
+
+.solvir_img_bbox>.solvir_44 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    transition: all 1s;
+}
+
+/* hover효과 */
+.solvir_img_bbox:hover>.solvir_4 {
+    opacity: 0;
+    transform: rotateY(180deg);
+}
+
+.solvir_img_bbox:hover>.solvir_44 {
+    transform: rotateY(180deg);
+    opacity: 1;
+}
+
+/* .solvir_text_bbox {
+    color: #16100d;
+    text-align: right;
+    padding-top: 18px;
+}
+
+.solvir_text_bbox>p {
+    padding-right: 190px;
+}
+
+.solvir_text_bbox>ul {
+    display: flex;
+    padding-left: 60px;
+    padding-top: 14px;
+}
+
+.solvir_text_bbox>ul>li {
+    padding-right: 8px;
+} */
+
+
+
+/* sichel */
+/* .sichel_img_bbox {
+    width: 420px;
+    height: 421px;
+    position: relative;
+    perspective: 1000px;
+} */
+
+.sichel_img_bbox>.sichel_4 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: all 1s;
+}
+
+.sichel_img_bbox>.sichel_44 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    transition: all 1s;
+}
+
+/* hover효과 */
+.sichel_img_bbox:hover>.sichel_4 {
+    opacity: 0;
+    transform: rotateY(180deg);
+}
+
+.sichel_img_bbox:hover>.sichel_44 {
+    transform: rotateY(180deg);
+    opacity: 1;
+}
+
+/* .sichel_text_bbox {
+    color: #16100d;
+    text-align: right;
+    padding-top: 18px;
+}
+
+.sichel_text_bbox>p {
+    padding-right: 190px;
+}
+
+.sichel_text_bbox>ul {
+    display: flex;
+    padding-left: 60px;
+    padding-top: 14px;
+}
+
+.sichel_text_bbox>ul>li {
+    padding-right: 8px;
+} */
+
+/* neuter */
+/* .neuter_img_bbox {
+    width: 420px;
+    height: 421px;
+    position: relative;
+    perspective: 1000px;
+} */
+
+.neuter_img_bbox>.neuter_4 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: all 1s;
+}
+
+.neuter_img_bbox>.neuter_44 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    transition: all 1s;
+}
+
+/* hover효과 */
+.neuter_img_bbox:hover>.neuter_4 {
+    opacity: 0;
+    transform: rotateY(180deg);
+}
+
+.neuter_img_bbox:hover>.neuter_44 {
+    transform: rotateY(180deg);
+    opacity: 1;
+}
+
+/* .neuter_text_bbox {
+    color: #16100d;
+    text-align: right;
+    padding-top: 18px;
+}
+
+.neuter_text_bbox>p {
+    padding-right: 190px;
+}
+
+.neuter_text_bbox>ul {
+    display: flex;
+    padding-left: 60px;
+    padding-top: 14px;
+}
+
+.neuter_text_bbox>ul>li {
+    padding-right: 8px;
+} */
+
+/* body_product_container - hand wash */
+
+.solvir_img_bbox>.solvir_5 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: all 1s;
+}
+
+.solvir_img_bbox>.solvir_55 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    transition: all 1s;
+}
+
+/* hover효과 */
+.solvir_img_bbox:hover>.solvir_5 {
+    opacity: 0;
+    transform: rotateY(180deg);
+}
+
+.solvir_img_bbox:hover>.solvir_55 {
+    transform: rotateY(180deg);
+    opacity: 1;
+}
+
+
+
+.sichel_img_bbox>.sichel_5 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: all 1s;
+}
+
+.sichel_img_bbox>.sichel_55 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    transition: all 1s;
+}
+
+/* hover효과 */
+.sichel_img_bbox:hover>.sichel_5 {
+    opacity: 0;
+    transform: rotateY(180deg);
+}
+
+.sichel_img_bbox:hover>.sichel_55 {
+    transform: rotateY(180deg);
+    opacity: 1;
+}
+
+
+
+.neuter_img_bbox>.neuter_5 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: all 1s;
+}
+
+.neuter_img_bbox>.neuter_55 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    transition: all 1s;
+}
+
+/* hover효과 */
+.neuter_img_bbox:hover>.neuter_5 {
+    opacity: 0;
+    transform: rotateY(180deg);
+}
+
+.neuter_img_bbox:hover>.neuter_55 {
+    transform: rotateY(180deg);
+    opacity: 1;
+}
+
+
+
+
+/* footer */
+#footer {
+    background-color: #16100d;
+    color: #e9e0d7;
+}
+
+.footer_box {
+    width: 1320px;
+    height: 354px;
+    margin: 0 auto;
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.footer_logo {
+    width: 256px;
+    box-sizing: border-box;
+    /* text-align: center;
+    align-items: center; */
+    margin-right: 185px;
+
+}
+
+.footer_text_box1 {
+    padding-right: 185px;
+}
+
+.footer_text_box1 ul {
+    display: flex;
+}
+
+.footer_text_box1 ul li {
+    padding-right: 20px;
+    font-size: 12px;
+}
+
+.footer_text_box1 ul li:nth-child(4) {
+    padding-right: 0;
+}
+
+.footer_box p {
+    font-size: 12px;
+    color: #e9e0d7;
+}
+
+
+
+.footer_text_box2 a {
+    font-size: 14px;
+}
+
+.footer_text_box2 p {
+    font-family: 'Belleza', sans-serif;
+}
