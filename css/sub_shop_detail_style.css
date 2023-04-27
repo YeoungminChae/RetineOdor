@@ -3,7 +3,7 @@ font-family: 'Belleza', sans-serif;
 font-family: 'Hahmlet', serif;
 */
 
-
+@charset "utf-8";
 
 
 
@@ -475,7 +475,7 @@ input[type=number] {
 }
 
 .numb_box {
-    border: 1px solid #494949;
+    border: 1px solid #16100d;
     height: 37px;
     width: 112px;
     position: relative;
